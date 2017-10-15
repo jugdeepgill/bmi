@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" charset="utf-8"></script>
+    <title>BMI Calculator - Bulma</title>
+  </head>
+  <body>
+    <div class="section">
+      <div class="container">
+        <form class="form">
+          <div class="field has-addons">
+            <div class="control is-expanded">
+              <input id="height" class="input is-large is-black column-4" type="number" placeholder="180 (CM)">
+            </div>
+            <div class="control is-expanded">
+              <input id="weight" class="input is-large is-black column-4" type="number" placeholder="78 (KG)">
+            </div>
+            <div class="control">
+              <a onclick="getBMI()" id="button" class="button is-large is-black column-4">GET BMI</a>
+            </div>
+          </div>
+        </form>
+
+        <br>
+
+        <div id="bmiBox">
+          <article id="message" class="message is-black">
+            <div class="message-header">
+              YOUR BMI
+            </div>
+            <div class="message-body">
+              <span id="bmiSpan" class="tag is-black">BMI: </span>
+              <h1 id="bmi" class="title is-1"></h1>
+              <span id="conditionSpan" class="tag is-black">Condition:</span>
+              <h1 id="condition" class="title is-3"></h1>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
